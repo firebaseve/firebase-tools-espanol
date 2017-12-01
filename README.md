@@ -49,3 +49,23 @@ Comando | Descripción
 **open** | Abre en el navegador recursos relevantes del proyecto.
 **init** | Configura un nuevo proyecto Firebase en el directorio actual. Este comando creará un archivo de configuración `firebase.json` en dicho directorio.
 **help** | Muestra información de ayuda sobre el CLI o comandos específicos.
+
+Agrega `--no-localhost` para iniciar sesión (por ejemplo: `firebase login --no-localhost`) copiando y pegando código en vez de utilizar la autenticación a través de tu navegador. Un caso de uso podría ser si te conectas a una _instancia_ mediante SSH, y necesitas autenticarte a Firebase en dicha máquina.
+
+### Despliegue y Desarrollo Local
+
+Estos comandos te permitirán desplegar e interactuar con tu sitio en Firebase Hosting.
+
+Comando | Descripción
+------- | -----------
+**deploy** | Despliega tu proyecto Firebase. Depende de la configuración en `firebase.json` y el directorio local de tu proyecto.
+**serve** | Inicia un servidor local con la configuración de tu Firebase Hosting. También depende de `firebase.json`.
+
+### Comandos de Autenticación
+
+Comando | Descripción
+------- | -----------
+**auth:import** | Importa lotes de perfiles hacia Firebase desde un archivo de datos.
+**auth:export** | Exporta lotes de perfiles desde Firebase hacia un archivo de datos.
+
+[Aquí](https://firebase.google.com/docs/cli/auth) puedes encontrar la documentación detallada.
