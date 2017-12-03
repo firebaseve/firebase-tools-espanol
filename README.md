@@ -69,3 +69,21 @@ Comando | Descripción
 **auth:export** | Exporta lotes de perfiles desde Firebase hacia un archivo de datos.
 
 [Aquí](https://firebase.google.com/docs/cli/auth) puedes encontrar la documentación detallada.
+
+### Comandos de Base de Datos
+
+Comando | Descripción
+------- | -----------
+**database:get** | Trae datos desde la base de datos del proyecto actual y la muestra como JSON. Soporta _consultas_ en datos indexados.
+**database:set** | Reemplaza todos datos en una locación especificada de la base de datos del proyecto actual. Toma como entrada un archivo, STDIN o un argumento de la línea de comandos.
+**database:push** | Agrega nuevos datos a una lista en una locación especificada de la base de datos del proyecto actual. Toma como entrada un archivo, STDIN o un argumento de la línea de comandos.
+**database:remove** | Borra todos datos en una locación especificada de la base de datos del proyecto actual.
+**database:update** | Realiza una actualización parcial en una locación especificada de la base de datos del proyecto actual. Toma como entrada un archivo, STDIN o un argumento de la línea de comandos.
+**database:profile** | Analiza el uso de la base de datos y genera un reporte.
+
+### Comandos Cloud Firestore
+
+Comando | Descripción
+------- | -----------
+**firestore:delete** | Borra _documentos_ o _colecciones_ de la base de datos del proyecto actual. Soporta borrado recursivo de _subcolecciones_.
+**firestore:indexes** | Muestra todos los _indexs_ desplegados del proyecto actual.
