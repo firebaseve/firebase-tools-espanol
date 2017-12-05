@@ -104,3 +104,44 @@ Comando | Descripción
 Comando | Descripción
 ------- | -----------
 **hosting:disable** | Deshabilita el tráfico web del proyecto activo en Firebase Hosting. El mensaje "Site Not Found" aparecerá en la URL de tu proyecto luego de ejecutar este comando.
+
+## Uso con Sistemas CI
+
+Firebase CLI requiere de un navegador web para completar el proceso de autenticación, sin embargo es totalmente compatible con CI y otros entornos sin interfaz gráfica.
+
+1. En una máquina con navegador web, instala Firebase CLI.
+2. Ejecuta en la terminal `firebase login:ci` para autenticarte y mostrar un nuevo token de acceso (la sesión actual no se verá afectada).
+3. Guarda el token de acceso en un lugar seguro pero accesible en tu sistema CI.
+
+Existen dos maneras de utilizar este token al ejecutar comandos Firebase:
+
+1. Guarda el token como una variable de entorno llamada `FIREBASE_TOKEN` y automáticamente será utilizado.
+2. Ejecuta todos los comandos en tu sistema CI con la `bandera` `--token <token>`.
+
+El orden de procedencia para cargar el token es `bandera`, variable de entorno, proyecto actual.
+
+En cualquier máquina con Firebase CLI, ejecutar `firebase logout --token <token>` revocará de inmediato el acceso al token especificado.
+
+## Uso como Módulo
+
+Firebase CLI puede ser también utilizado programáticamente como un módulo Node estándar. Esto sólamente puede ser logrado en tu máquina pero no en las Cloud Functions. Cada comando es expuesto como una función que toma Objectos como opciones y retorna Promesas. Por ejemplo:
+
+```js
+const client = require('firebase-tools');
+
+client.list()
+  .then(data => console.log(data))
+  .catch(err => {
+    // haz algo con el error.
+  });
+
+client.deploy({
+  project: 'myfirebase',
+  token: process.env.FIREBASE_TOKEN,
+  cwd: '/path/to/project/folder'
+}).then(() => {
+  console.log('Rules have been deployed!');
+}).catch(err => {
+  // haz algo con el error.
+});
+```
