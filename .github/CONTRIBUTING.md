@@ -36,7 +36,7 @@ Tenemos una estructura a seguir, para facilitar la validación de tus contribuci
  
 El Encabezado:  `tipo(ámbito): <Mensaje Corto>` **es obligatorio**, el resto es opcional. Las acciones disponibles, puedes encontarlas en [Acciones](#acciones), un poco más abajo.
 
-Cualquier línea en un mensaje de commit no de ser mayor de 100 caracteres!. Esto permite la fácil lectura de los mensajes tant oen Github como en varias herramientas de git.
+Cualquier línea en un mensaje de commit no de ser mayor de 100 caracteres!. Esto permite la fácil lectura de los mensajes tanto en Github como en varias herramientas de git.
 
 #### Ejemplos:
 _Commit Corto:_
@@ -65,11 +65,11 @@ Por favor asegurate que tú `pull request` cumpla los siguientes lineamientos:
 - Sigue las indicaciones dadas en la plantilla de `pulls requests`.
 - Usa `title-casing` (AP style).
 - Presta mucha atención a tu ortografía.
-- Nuevos aportes o mejoras a lo que ya existe, siempre es bienvenido.
+- Nuevos aportes o mejoras a lo que ya existe, siempre son bienvenidos.
 
 
 ## Tipos Acciones
-Las acciones son los indicativos primordiales de los cambios que realizamos en un determinado archivo. Con éstas lo que intentamos es saber con una simple lectura que tipo de modificació fué hecha.
+Las acciones son los indicativos primordiales de los cambios que realizamos en un determinado archivo. Con éstas lo que intentamos es saber con una simple lectura que tipo de modificación fué hecha.
 Actualmente tenemos estás acciones disponibles: 
 
 - **feat**: Implementación de nueva funcionalidad.
