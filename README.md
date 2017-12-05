@@ -81,14 +81,14 @@ Comando | Descripción
 **database:update** | Realiza una actualización parcial en una locación especificada de la base de datos del proyecto actual. Toma como entrada un archivo, STDIN o un argumento de la línea de comandos.
 **database:profile** | Analiza el uso de la base de datos y genera un reporte.
 
-### Comandos Cloud Firestore
+### Comandos de Cloud Firestore
 
 Comando | Descripción
 ------- | -----------
 **firestore:delete** | Borra _documentos_ o _colecciones_ de la base de datos del proyecto actual. Soporta borrado recursivo de _subcolecciones_.
 **firestore:indexes** | Muestra todos los _indexs_ desplegados del proyecto actual.
 
-### Comandos Cloud Functions
+### Comandos de Cloud Functions
 
 Comando | Descripción
 ------- | -----------
@@ -99,15 +99,15 @@ Comando | Descripción
 **functions:config:clone** | Copia las _variables de entorno_ desde un proyecto hacia otro.
 **experimental:functions:shell** | Emula localmente _Functions_ e inicia Node.js para que éstas puedan ser invocadas con datos de prueba.
 
-### Comandos Hosting
+### Comando de Hosting
 
 Comando | Descripción
 ------- | -----------
 **hosting:disable** | Deshabilita el tráfico web del proyecto activo en Firebase Hosting. El mensaje "Site Not Found" aparecerá en la URL de tu proyecto luego de ejecutar este comando.
 
-## Uso con Sistemas CI
+## Usando Integración Continua (CI)
 
-Firebase CLI requiere de un navegador web para completar el proceso de autenticación, sin embargo es totalmente compatible con CI y otros entornos sin interfaz gráfica.
+Firebase CLI requiere de un navegador web para completar el proceso de autenticación, sin embargo es totalmente compatible con Integración Continua y otros entornos sin interfaz gráfica.
 
 1. En una máquina con navegador web, instala Firebase CLI.
 2. Ejecuta en la terminal `firebase login:ci` para autenticarte y mostrar un nuevo token de acceso (la sesión actual no se verá afectada).
@@ -116,13 +116,13 @@ Firebase CLI requiere de un navegador web para completar el proceso de autentica
 Existen dos maneras de utilizar este token al ejecutar comandos Firebase:
 
 1. Guarda el token como una variable de entorno llamada `FIREBASE_TOKEN` y automáticamente será utilizado.
-2. Ejecuta todos los comandos en tu sistema CI con la `bandera` `--token <token>`.
+2. Ejecuta todos los comandos en tu sistema de Integración Continua (CI) con la `bandera` `--token <token>`.
 
 El orden de procedencia para cargar el token es `bandera`, variable de entorno, proyecto actual.
 
 En cualquier máquina con Firebase CLI, ejecutar `firebase logout --token <token>` revocará de inmediato el acceso al token especificado.
 
-## Uso como Módulo
+## Usando como un Módulo
 
 Firebase CLI puede ser también utilizado programáticamente como un módulo Node estándar. Esto sólamente puede ser logrado en tu máquina pero no en las Cloud Functions. Cada comando es expuesto como una función que toma Objectos como opciones y retorna Promesas. Por ejemplo:
 
