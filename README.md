@@ -136,11 +136,11 @@ client.list()
   });
 
 client.deploy({
-  project: 'myfirebase',
+  project: 'firebaseve',
   token: process.env.FIREBASE_TOKEN,
-  cwd: '/path/to/project/folder'
+  cwd: '/ruta/al/directorio/del/proyecto'
 }).then(() => {
-  console.log('Rules have been deployed!');
+  console.log('¡Las reglas han sido desplegadas!');
 }).catch(err => {
   // haz algo con el error.
 });
