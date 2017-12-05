@@ -79,7 +79,8 @@ Actualmente tenemos estás acciones disponibles:
 - **refactor**: Un cambio de código que no corrige errores ni añade características.
 - **chore**: Otros cambios que no modifica codigo funcional de la aplicación.
 
-#####¿Por qué las acciones en ingles?##### 🤔😕
+##### ¿Por qué las acciones en ingles? 🤔😕
+
 Si, sabemos que somos una comunidad en español, solo que en este caso aprovechamos lo corto de las palabras en ingles para que nuestros commits sean más explicativos.
 
 ## Ámbito
