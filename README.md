@@ -87,3 +87,20 @@ Comando | Descripción
 ------- | -----------
 **firestore:delete** | Borra _documentos_ o _colecciones_ de la base de datos del proyecto actual. Soporta borrado recursivo de _subcolecciones_.
 **firestore:indexes** | Muestra todos los _indexs_ desplegados del proyecto actual.
+
+### Comandos Cloud Functions
+
+Comando | Descripción
+------- | -----------
+**functions:log** | Muestra los registros de las Cloud Functions desplegadas.
+**functions:config:set** | Define _variables de entorno_ para el proyecto actual.
+**functions:config:get** | Obtiene las _variables de entorno_ existentes en el proyecto actual.
+**functions:config:unset** | Elimina las _variables de entorno_ definidas para proyecto actual.
+**functions:config:clone** | Copia las _variables de entorno_ desde un proyecto hacia otro.
+**experimental:functions:shell** | Emula localmente _Functions_ e inicia Node.js para que éstas puedan ser invocadas con datos de prueba.
+
+### Comandos Hosting
+
+Comando | Descripción
+------- | -----------
+**hosting:disable** | Deshabilita el tráfico web del proyecto activo en Firebase Hosting. El mensaje "Site Not Found" aparecerá en la URL de tu proyecto luego de ejecutar este comando.
