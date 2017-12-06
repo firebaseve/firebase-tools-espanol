@@ -1,5 +1,15 @@
 # Contribuyendo con "firebase-tools-espanol" 
 
+La idea fundamental de este repositorio es traducir al español la documentación de **firebase-tools** disponible en el [firebase/firebase-tools/README.md](https://github.com/firebase/firebase-tools/blob/master/README.md),  así como cada comando con sus respectivas opciones, obtenidas haciendo **`firebase <comando> --help`**.  
+
+###### ¿Te animas a ayudarnos? 😎
+
+## ¿Cómo puedo ayudar?
+
+Pues muy sencillo, solo mira alguno de los [issues abiertos](https://github.com/firebaseve/firebase-tools-espanol/issues) (en caso de haberlo), o simplemente propón uno. 
+
+Es importante que tengas en cuenta lo siguente ... 
+
 Para nosotros tú contribución es muy importante, y en pro de mantener un orden en nuestros repos hemos creado este archivo `contributing.md`, para que puedas enviar todos tus aportes. 
 Aquí están los lineamientos para poder contribuir.
 
@@ -93,7 +103,7 @@ El mensaje debe contener una descripción clara y concisa del cambio realizado.
 - No capitalizar la primera letra.
 - No coloque punto (.) al final
 
-_Si quieres proponer un nuevo tipo de "Accion", puedes abrir un `issue`, para ello en este [enlace](https://github.com/firebaseve/firebase-increible/issues)_
+_Si quieres proponer un nuevo tipo de "Accion", puedes abrir un `issue`, para ello en este [enlace](https://github.com/firebaseve/firebase-tools-espanol/issues)_
 
 
 **_¡Importante!: Las contribuciones que no cumpla con las recomendaciones acá expuestas no será aceptadas._**
