@@ -2,7 +2,7 @@
 
 La idea fundamental de este repositorio es traducir al español la documentación de **firebase-tools** disponible en el [firebase/firebase-tools/README.md](https://github.com/firebase/firebase-tools/blob/master/README.md),  así como cada comando con sus respectivas opciones, obtenidas haciendo **`firebase <comando> --help`**.  
 
-###### ¿Te animas a ayudarnos? 😎
+##### ¿Te animas a ayudarnos? 😎
 
 ## ¿Cómo puedo ayudar?
 
@@ -29,8 +29,9 @@ Quedaría algo como esto: `fv-issue-14-encuesta`. Pero también es válido algo 
 
 El branch `master` es tratado como "producción" y `develop` como el de "ci", o "qa", por lo consiguiente, se deben crear branches o ramas individuales, a partír de `develop` para cualquier aporte, luego en el `pull request` se debe especificar que el nuevo cambio será unirá a `develop`.
 
-##### **_IMPORTANTE_**
-¡NUNCA! debemos hacer merge a `master` ya que estaríamos haciendo cambios a "PRODUCCION".
+### ¡IMPORTANTE!
+
+_¡NUNCA!_ debemos hacer merge a `master` ya que estaríamos haciendo cambios a "PRODUCCION".
 
 ## Formato de Commits
 Tenemos una estructura a seguir, para facilitar la validación de tus contribuciones y mantener un buen flujo de trabajo. Los mensajes de commits _deberían_ ser de la siguiente manera:
@@ -89,6 +90,8 @@ Actualmente tenemos estás acciones disponibles:
 - **refactor**: Un cambio de código que no corrige errores ni añade características.
 - **chore**: Otros cambios que no modifica codigo funcional de la aplicación.
 
+###### NOTA: Si quieres proponer un nuevo tipo de "Accion", puedes abrir un `issue`, para ello en este [enlace](https://github.com/firebaseve/firebase-tools-espanol/issues)</sup>_
+
 ##### ¿Por qué las acciones en ingles? 🤔😕
 
 Si, sabemos que somos una comunidad en español, solo que en este caso aprovechamos lo corto de las palabras en ingles para que nuestros commits sean más explicativos.
@@ -103,9 +106,12 @@ El mensaje debe contener una descripción clara y concisa del cambio realizado.
 - No capitalizar la primera letra.
 - No coloque punto (.) al final
 
-_Si quieres proponer un nuevo tipo de "Accion", puedes abrir un `issue`, para ello en este [enlace](https://github.com/firebaseve/firebase-tools-espanol/issues)_
+## Agradecimientos
 
+Agradecemos a la Comunidad [ngVenezuela](https://github.com/ngVenezuela) por permitirnos usar su [CONTRIBUTING.md](https://github.com/ngVenezuela/wengy-ven/blob/develop/.github/CONTRIBUTING.md) como base para el nuestro.
 
-**_¡Importante!: Las contribuciones que no cumpla con las recomendaciones acá expuestas no será aceptadas._**
+¡Mil gracias! 😎_
 
-_Agradecimientos: Comunidad [ngVenezuela](https://github.com/ngVenezuela) por permitirnos usar su [CONTRIBUTING.md](https://github.com/ngVenezuela/wengy-ven/blob/develop/.github/CONTRIBUTING.md) como base para el nuestro. ¡Mil gracias! 😎_
+---
+
+_**¡IMPORTANTE! Las contribuciones que no cumplan con las recomendaciones acá expuestas no serán aceptadas.**_
